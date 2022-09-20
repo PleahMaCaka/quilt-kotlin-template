@@ -1,0 +1,43 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "examplemod",
+		"id": "examplemod",
+		"version": "${version}",
+		"metadata": {
+			"name": "examplemod",
+			"description": "Very Awesome Example Mode.",
+			"contributors": {
+				"PleahMaCaka": "Owner"
+			},
+			"contact": {
+				"homepage": "https://github.com/PleahMaCaka",
+				"issues": "https://github.com/quilt-kotlin-template/issue",
+				"sources": "https://github.com/quilt-kotlin-template"
+			},
+			"icon": "assets/examplemod/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": {
+				"adapter": "kotlin",
+				"value": "examplemod.ExampleMod"
+			}
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.17.0-"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=4.0.0-"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.19.2"
+			}
+		]
+	},
+	"mixin": "examplemod.mixins.json"
+}
